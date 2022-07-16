@@ -32,13 +32,6 @@ button {
     font-weight: bold;
 }
 
-img {
-    min-height: 250px;
-    min-width: 250px;
-    width: auto;
-    background-color: aliceblue;
-}
-
 .header-navbar{    
     padding-left: 7%;
     padding-right: 10%;
@@ -63,7 +56,7 @@ img {
     align-items: center;
     justify-content: space-evenly;
     padding: 0 10% 0 10%;
-
+    gap: 3%;
 }
 
 .h1-hero {
@@ -87,6 +80,12 @@ img {
     background-color: aliceblue;    
 }
 
+.hero-img img {
+    min-height: 250px;
+    min-width: 250px;
+    width: auto;
+    background-color: aliceblue;
+}
 
 .main {
     display: flex;
@@ -100,6 +99,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2%;
 }
 
 .main-h2 {
@@ -107,18 +107,44 @@ img {
     font-weight: 800;
     color: #1F2937;    
     padding: 15px 0px;
+    margin-bottom: 1%;
 }
 
 .main-content-image-gallery {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 1%;    
+    margin-bottom: 1.5%;
+}
+
+.main-content-image-gallery p{
+    font-size: 14px;    
+    text-align: center;
 }
 
 .main-content-img {
-    border: 1px;
+    border: 2px;
     border-style: solid;
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+    border-radius: 5px;
+    border-color: #3882F6;    
 }
 
+.image-desc {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.image-desc p{
+    width: 80%;
+}
 
 .main-quote{
     background-color: #E5E7EB;
@@ -126,14 +152,21 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;    
-    padding: 2% 25%;
+    padding: 5% 25%;
     font-size: 36px;
     color: #1F2937;    
 }
 
+.main-quote-content em{
+    font-weight: 100;
+    color: #1F2937;    
+}
+
 .main-quote-author {
+    margin-top: 2%;
     font-size: 18px;
     margin-left: auto;
+    font-weight: 800;
 }
 
 .main-cta {
@@ -141,17 +174,30 @@ img {
     align-items: center;
     justify-content: center;
     padding: auto;
-    padding: 3% 0%;
+    padding: 5% 0%;
 }
 
 .main-cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #3882F6;
     color: #F9FAF8;
     border-radius: 3px;
     padding: 1% 3%;
     width: 62%;
+    gap: 15%;
+    min-height: 100%;
 }
 
+.main-cta-header {
+    font-weight: 600;    
+}
+
+.main-cta-text {
+    font-weight: 200;
+    margin: 0.5% 0%;
+}
 
 .cta-btn {
     border: 1px;
